@@ -62,6 +62,7 @@
         <com.android.settings.display.darkmode.DarkModePreference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"
+	    android:summary="@string/dark_ui_summary"
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
