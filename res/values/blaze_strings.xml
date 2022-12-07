@@ -227,7 +227,7 @@
 
     <!-- Black theme -->
     <string name="system_black_theme_title">Use black theme</string>
-    <string name="system_black_theme_summary">Force black background colors</string>
+    <string name="system_black_theme_summary">Force black background colors\n (Requires SystemUI Restart)</string>
 
     <!-- Fullscreen gestures -->
     <string name="navbar_category">Navigation bar</string>
