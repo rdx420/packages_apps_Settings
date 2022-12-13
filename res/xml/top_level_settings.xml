@@ -100,9 +100,67 @@
         settings:highlightableMenuKey="@string/menu_key_notifications"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.fuelgauge.batteryusage.PowerUsageSummary"
+        android:icon="@drawable/ic_settings_battery_white"
+        android:key="top_level_battery"
+        android:order="-90"
+        android:title="@string/power_usage_summary_title"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_battery"
+        settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
+        android:icon="@drawable/ic_storage_white"
+        android:key="top_level_storage"
+        android:order="-80"
+        android:title="@string/storage_settings"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_storage"
+        settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.notification.SoundSettings"
+        android:icon="@drawable/ic_volume_up_24dp"
+        android:key="top_level_sound"
+        android:order="-70"
+        android:title="@string/sound_settings"
+        android:summary="@string/sound_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_sound"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.DisplaySettings"
+        android:icon="@drawable/ic_settings_display_white"
+        android:key="top_level_display"
+        android:order="-60"
+        android:title="@string/display_settings"
+        android:summary="@string/display_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_display"
+        settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
+
+    <com.android.settings.widget.RestrictedHomepagePreference
+        android:icon="@drawable/ic_settings_wallpaper_white"
+        android:key="top_level_wallpaper"
+        android:order="-50"
+        android:title="@string/wallpaper_settings_title"
+        android:summary="@string/wallpaper_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_wallpaper"
+        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+        android:icon="@drawable/ic_settings_accessibility"
+        android:key="top_level_accessibility"
+        android:order="-40"
+        android:title="@string/accessibility_settings"
+        android:summary="@string/accessibility_settings_summary"
+        settings:highlightableMenuKey="@string/menu_key_accessibility"
+        settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_settings_safety_center"
         android:key="top_level_safety_center"
-        android:order="-90"
+        android:order="-30"
         android:title="@string/safety_center_title"
         android:summary="@string/safety_center_summary"
         settings:highlightableMenuKey="@string/menu_key_safety_center"
@@ -112,7 +170,7 @@
         android:fragment="com.android.settings.security.SecuritySettings"
         android:icon="@drawable/ic_settings_security_white"
         android:key="top_level_security"
-        android:order="-80"
+        android:order="-20"
         android:title="@string/security_settings_title"
         android:summary="@string/security_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_security"
@@ -122,7 +180,7 @@
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/ic_settings_privacy"
         android:key="top_level_privacy"
-        android:order="-70"
+        android:order="-10"
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_privacy"

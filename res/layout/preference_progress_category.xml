@@ -48,7 +48,8 @@
         android:layout_gravity="start|center"
 	android:textAppearance="@style/TextAppearance.CategoryTitle"
         android:hyphenationFrequency="normalFast"
-        android:textColor="?android:attr/textColorSecondary"/>
+        android:lineBreakWordStyle="phrase"
+        android:textColor="?android:attr/colorAccent"/>
 
     <ProgressBar
         android:id="@+id/scanning_progress"
